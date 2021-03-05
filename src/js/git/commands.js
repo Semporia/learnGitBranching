@@ -253,7 +253,7 @@ var commandConfig = {
         source = firstArg;
         assertIsBranch(engine.origin, source);
         // get o/master locally if master is specified
-        destination = engine.origin.refs[source].getPrefixedID();
+        destination = engine.origin.resolveID(source).getPrefixedID();
       } else {
         // can't be detached
         if (engine.getDetachedHead()) {
@@ -394,7 +394,7 @@ var commandConfig = {
         source = firstArg;
         assertIsBranch(engine.origin, source);
         // get o/master locally if master is specified
-        destination = engine.origin.refs[source].getPrefixedID();
+        destination = engine.origin.resolveID(source).getPrefixedID();
       }
       if (source) { // empty string fails this check
         assertIsRef(engine.origin, source);
@@ -447,8 +447,8 @@ var commandConfig = {
         assertIsRemoteBranch(engine, remoteBranch);
         assertIsBranch(engine, branch);
         engine.setLocalToTrackRemote(
-          engine.refs[branch],
-          engine.refs[remoteBranch]
+          engine.resolveID(branch),
+          engine.resolveID(remoteBranch)
         );
         return;
       }
@@ -743,7 +743,7 @@ var commandConfig = {
         var refspecParts = firstArg.split(':');
         source = refspecParts[0];
         destination = validateBranchName(engine, refspecParts[1]);
-        if (source === "" && !engine.origin.refs[destination]) {
+        if (source === "" && !engine.origin.resolveID(destination)) {
           throw new GitError({
             msg: intl.todo(
               'cannot delete branch ' + options.destination + ' which doesnt exist'
@@ -770,7 +770,7 @@ var commandConfig = {
             sourceObj.getRemoteTrackingBranchID()) {
           assertBranchIsRemoteTracking(engine, source);
           var remoteBranch = sourceObj.getRemoteTrackingBranchID();
-          destination = engine.refs[remoteBranch].getBaseID();
+          destination = engine.resolveID(remoteBranch).getBaseID();
         } else {
           destination = validateBranchName(engine, source);
         }

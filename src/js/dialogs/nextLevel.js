@@ -183,8 +183,19 @@ exports.dialog = {
       markdowns: [
         '## Dobra robota!!',
         '',
-        'Rozwiązałeś poziom za pomocą *{numCommands}* poleceń/poleceniach; ',
+        'Rozwiązałeś poziom używając *{numCommands}* poleceń/ia; ',
         'nasze rozwiązanie składa się z {best}.'
+      ]
+    }
+  }],
+  'ta_IN': [{
+    type: 'ModalAlert',
+    options: {
+      markdowns: [
+        '## ஆக சிரந்த செயல்!!',
+        '',
+        'நீங்கள் *{numCommands}* நிலைக்கான கட்டளை(கள்) கொண்டு தீர்வை அடிந்து விட்டீர்கள்; ',
+        'நமது தீர்வு {best}-ஐ பயன்படுத்து கின்றது.'
       ]
     }
   }],

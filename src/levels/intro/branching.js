@@ -18,7 +18,8 @@ exports.level = {
     "uk": "Розгалуження в Git",
     "vi": "Rẽ nhánh với Git",
     "sl_SI": "Branchanje v Gitu",
-    "pl"   : "Rozgałęzienia w GIT-cie (branch)"
+    "pl"   : "Rozgałęzienia w GIT-cie (branch)",
+    "ta_IN": "கிட் கிளை நிருவாகம்"
   },
   "hint": {
     "en_US": "Make a new branch with \"git branch <branch-name>\" and check it out with \"git checkout <branch-name>\"",
@@ -37,7 +38,8 @@ exports.level = {
     "uk": "Створи нову гілку за допомогою \"git branch [ім’я]\" й перейди на неї за допомогою \"git checkout [ім’я]\"",
     "vi": "Tạo một nhánh mới với lệnh \"git branch <ten-nhanh>\" và chuyển sang đó với lệnh \"git checkout <ten-nhanh>\"",
     "sl_SI": "Naredi nov branch z \"git branch [ime-brancha]\" in ga checkoutaj z \"git checkout [ime-brancha]\"",
-    "pl"   : "Utwórz nowy branch za pomocą \"git branch <branch-name>\" i sprawdź ją za pomocą \"git checkout <branch-name>\""
+    "pl"   : "Utwórz nowy branch za pomocą \"git branch <branch-name>\" i sprawdź ją za pomocą \"git checkout <branch-name>\"",
+    "ta_IN": "இப்போது \"git branch <branch-name>\" கட்டளையை கொண்டு புதிய கிளை ஒன்றை உருவாக்குக பின் \"git checkout <branch-name>\" கொண்டு அந்த கிளைக்கு தாவுக"
   },
   "disabledMap": {
     "git revert": true
@@ -85,7 +87,7 @@ exports.level = {
               "Let's try to put some work on this new branch. Hit the button below."
             ],
             "afterMarkdowns": [
-              "Oh no! The `master` branch moved but the `newImage` branch didn't! That's because we weren't \"on\" the new branch, which is why the asterisk (*) was on `master`."
+              "Oh no! The `main` branch moved but the `newImage` branch didn't! That's because we weren't \"on\" the new branch, which is why the asterisk (*) was on `main`."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -174,7 +176,7 @@ exports.level = {
               "Lass uns mal ein wenig auf dem neuen Branch arbeiten. Machen wir einen Commit:"
             ],
             "afterMarkdowns": [
-              "Oi! Der Branch `master` hat sich verändert, aber der Branch `issue` nicht. Das liegt daran, dass wir nicht \"auf\" dem neuen Branch waren, weshalb das Sternchen `*` auch hinter `master` steht."
+              "Oi! Der Branch `main` hat sich verändert, aber der Branch `issue` nicht. Das liegt daran, dass wir nicht \"auf\" dem neuen Branch waren, weshalb das Sternchen `*` auch hinter `main` steht."
             ],
             "command": "git commit",
             "beforeCommand": "git branch issue"
@@ -251,7 +253,7 @@ exports.level = {
               "この新しいブランチに何か変更を加えてみましょう。次のボタンを押してください。"
             ],
             "afterMarkdowns": [
-              "あらら、`newImage`ではなくて`master`ブランチが移動してしまいました。これは、私たちが`newImage`のブランチ上で作業していなかったためです。どのブランチで作業しているかは、アスタリスク(*)がついてるかどうかで分かります。"
+              "あらら、`newImage`ではなくて`main`ブランチが移動してしまいました。これは、私たちが`newImage`のブランチ上で作業していなかったためです。どのブランチで作業しているかは、アスタリスク(*)がついてるかどうかで分かります。"
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -329,7 +331,7 @@ exports.level = {
               "Pongamos algo de trabajo en esta nueva rama. Apretá el botón de acá abajo."
             ],
             "afterMarkdowns": [
-              "¡Uh, no! ¡La rama `master` avanzó, pero `newImage` no! Eso es porque no estábamos \"en\" la rama nueva, y por eso el asterisco (*) estaba en `master`."
+              "¡Uh, no! ¡La rama `main` avanzó, pero `newImage` no! Eso es porque no estábamos \"en\" la rama nueva, y por eso el asterisco (*) estaba en `main`."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -407,7 +409,7 @@ exports.level = {
               "Pongamos algo de trabajo en esta nueva rama. Aprieta el botón que se encuentra debajo."
             ],
             "afterMarkdowns": [
-              "¡Uh, no! ¡La rama `master` avanzó, pero `newImage` no! Eso es porque no estábamos \"en\" la rama nueva, y por eso el asterisco (*) estaba en `master`."
+              "¡Uh, no! ¡La rama `main` avanzó, pero `newImage` no! Eso es porque no estábamos \"en\" la rama nueva, y por eso el asterisco (*) estaba en `main`."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -485,7 +487,7 @@ exports.level = {
               "Pongamos algo de trabajo en esta nueva rama. Aprieta el botón de aquí abajo."
             ],
             "afterMarkdowns": [
-              "¡Vaya! ¡La rama `master` avanzó, pero `newImage` no! Eso es porque no estábamos \"en\" la rama nueva, y por eso el asterisco (*) estaba en `master`."
+              "¡Vaya! ¡La rama `main` avanzó, pero `newImage` no! Eso es porque no estábamos \"en\" la rama nueva, y por eso el asterisco (*) estaba en `main`."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -563,7 +565,7 @@ exports.level = {
               "Vamos tentar colocar algum trabalho neste novo ramo. Clique no botão abaixo."
             ],
             "afterMarkdowns": [
-              "Ah não! O ramo `master` se moveu mas o `newImage` não! Isso é porque o novo ramo não era o \"ativo\", e é por isso que o asterisco (*) estava no `master`."
+              "Ah não! O ramo `main` se moveu mas o `newImage` não! Isso é porque o novo ramo não era o \"ativo\", e é por isso que o asterisco (*) estava no `main`."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -641,7 +643,7 @@ exports.level = {
               "Imos intentar colocar algún traballo nesta nova rama. Pincha no botón de abaixo."
             ],
             "afterMarkdowns": [
-              "¡Bueno home! A rama `master` moveuse pero a rama `newImage` non! Eso é porque a nova rama non era a \"actual\", e é por iso que o asterisco (*) ficaba na rama `master`."
+              "¡Bueno home! A rama `main` moveuse pero a rama `newImage` non! Eso é porque a nova rama non era a \"actual\", e é por iso que o asterisco (*) ficaba na rama `main`."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -723,7 +725,7 @@ exports.level = {
               "Travaillons mainenant dans cette branche. Appuyez sur le bouton ci-dessous."
             ],
             "afterMarkdowns": [
-              "Oh non! La branche `master` a bougé mais pas la branche `newImage` ! C'est parce que nous n'étions pas  \"sur\" la nouvelle branche, comme indiqué par l'astérisque (*) sur `master`."
+              "Oh non! La branche `main` a bougé mais pas la branche `newImage` ! C'est parce que nous n'étions pas  \"sur\" la nouvelle branche, comme indiqué par l'astérisque (*) sur `main`."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -802,7 +804,7 @@ exports.level = {
             ],
             "command": "git commit",
             "afterMarkdowns": [
-              "哎呀！为什么 `master` 分支前进了，但 `newImage` 分支还待在原地呢？！这是因为我们没有“在”这个新分支上，看到 `master` 分支上的那个星号（*）了吗？这表示当前所在的分支是 `master`。"
+              "哎呀！为什么 `main` 分支前进了，但 `newImage` 分支还待在原地呢？！这是因为我们没有“在”这个新分支上，看到 `main` 分支上的那个星号（*）了吗？这表示当前所在的分支是 `main`。"
             ],
             "beforeCommand": "git branch newImage"
           }
@@ -882,7 +884,7 @@ exports.level = {
             ],
             "command": "git commit",
             "afterMarkdowns": [
-              "太奇怪了啦！ `master` branch 前進了，但 `newImage` branch 沒有前進！這是因為我們沒有「在」這個新的 branch 上，這也是為什麼星號（*）會在 `master` 上。"
+              "太奇怪了啦！ `main` branch 前進了，但 `newImage` branch 沒有前進！這是因為我們沒有「在」這個新的 branch 上，這也是為什麼星號（*）會在 `main` 上。"
             ],
             "beforeCommand": "git branch newImage"
           }
@@ -959,7 +961,7 @@ exports.level = {
               "이 새로운 브랜치에 약간의 작업을 더해봅시다. 아래 버튼을 눌러주세요"
             ],
             "afterMarkdowns": [
-              "앗! `master` 브랜치가 움직이고, `newImage` 브랜치는 이동하지 않았네요! 그건 우리가 새 브랜치 위에 있지 않았었기 때문입니다. 별표(*)가 `master`에 있었던 것이죠."
+              "앗! `main` 브랜치가 움직이고, `newImage` 브랜치는 이동하지 않았네요! 그건 우리가 새 브랜치 위에 있지 않았었기 때문입니다. 별표(*)가 `main`에 있었던 것이죠."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -1037,7 +1039,7 @@ exports.level = {
               "Теперь попробуем сделать некоторые изменения в этой ветке. Для этого нажми кнопку ниже."
             ],
             "afterMarkdowns": [
-              "О-оу! Ветка master сдвинулась, тогда как ветка newImage - нет! Всё из-за того, что мы не переключились на новую ветку, а остались в старой, о чём говорит звёздочка около ветки master."
+              "О-оу! Ветка main сдвинулась, тогда как ветка newImage - нет! Всё из-за того, что мы не переключились на новую ветку, а остались в старой, о чём говорит звёздочка около ветки main."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -1118,7 +1120,7 @@ exports.level = {
               "Давайте спробуємо додати якусь інформацію до цієї нової гілки. Натисни кнопку внизу."
             ],
             "afterMarkdowns": [
-              "От халепа! Гілка `master` просунулася вперед, але гілка `newImage` \u2014 ні! Це тому, що ми були не \"на новій гілці\". Через це зірочка (*) була поруч з  `master`."
+              "От халепа! Гілка `main` просунулася вперед, але гілка `newImage` \u2014 ні! Це тому, що ми були не \"на новій гілці\". Через це зірочка (*) була поруч з  `main`."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -1196,7 +1198,7 @@ exports.level = {
               "Nào cùng thử thêm nội dung vào nhánh mới này nào. Hãy bấm nút bên dưới"
             ],
             "afterMarkdowns": [
-              "Ồ không! Nhánh `master` đã di chuyển nhưng nhánh `newImage` thì không! Đó là do ta không \"nằm trên\" nhánh mới, đó là tại sao dấu hoa thị (*) nằm trên nhánh `master`."
+              "Ồ không! Nhánh `main` đã di chuyển nhưng nhánh `newImage` thì không! Đó là do ta không \"nằm trên\" nhánh mới, đó là tại sao dấu hoa thị (*) nằm trên nhánh `main`."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -1278,7 +1280,7 @@ exports.level = {
               "Poizkusimo dodati nekaj dela na ta nov branch. Pristisni gumb spodaj."
             ],
             "afterMarkdowns": [
-              "O ne! `master` branch se je premaknil ampak `newImage` branch se pa ni! To je zato, ker nismo bili \"na\" novem branchu, kot smo lahko videli z označeno zvezdico (*) na `master` branchu."
+              "O ne! `main` branch se je premaknil ampak `newImage` branch se pa ni! To je zato, ker nismo bili \"na\" novem branchu, kot smo lahko videli z označeno zvezdico (*) na `main` branchu."
             ],
             "command": "git commit",
             "beforeCommand": "git branch newImage"
@@ -1360,7 +1362,7 @@ exports.level = {
               "Spróbujmy trochę popracować nad tą nowym branch-em (gałęzią).\nKliknij przycisk poniżej."
             ],
             "afterMarkdowns": [
-              "O nie! branch `master` uległ zmianie, a branch `mojBranch` nie! To dlatego, że nie byliśmy \"w\" nowym branch-u (gałęzi) i dlatego gwiazdka (*) była przy `master`"
+              "O nie! branch `main` uległ zmianie, a branch `mojBranch` nie! To dlatego, że nie byliśmy \"w\" nowym branch-u (gałęzi) i dlatego gwiazdka (*) była przy `main`"
             ],
             "command": "git commit",
             "beforeCommand": "git branch mojBranch"
@@ -1406,6 +1408,99 @@ exports.level = {
               "Przy okazji, oto skrót: jeśli chcesz stworzyć",
               "nowy branch ORAZ przełączyć się na niego w tym samym czasie,",
               "możesz po prostu wpisać `git checkout -b [nazwa_branch-u]`."
+            ]
+          }
+        }
+      ]
+    },
+    "ta_IN": {
+      "childViews": [
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "## கிட் கிளைகள்",
+              "",
+              "கிட் கிளைகள் மிகவும் இலகுவானவை. அவை ஒரு குரிப்பிட்ட கமிட்டினை சுட்டி காட்டும் ஒரு இணைப்பு குறியீடு மட்டும்தான். இதனால்தான் பல கிட் ஆர்வலர்கள் உச்சரிக்கும் மந்திரம்:",
+              "",
+              "```",
+              "மாற்றம் செய்யும் முன்பே கிளையை உருவாக்குங்ள், அடிக்கடி தேவை என்றால் மேலும் கிளைகளை உருவாக்குங்கள்.",
+              "```",
+              "",
+              "ஏன் என்றால் புதிய கிளைகளை உருவாகுவது சேமிப்புபலுவோ / நினைவக மேலான்மை பலுவோ முற்றிலும் இல்லை, பெரிய பல்வேரு மற்றங்களை கொண்ட பலுமிக்க கிளைகளைக் காட்டிலும் உங்கள் வேலையை தர்க்கமாக சிரு சிரு கிளைகளக பிரிப்பது எளிது.",
+              "",
+              "கிளைகள் மற்றும் கமிட்டுகளை கொண்ட கலவை உருவாக்கும் போது இவை இரண்டின் இனக்கத்தினை விவாதிப்போம். தற்ப்போது, கிளை உருவாக்குதல் என்பதை \"இந்த கமிட்டுடன் இதர்க்கு முன் இருந்த அனைத்து கமிட்டுகளையும் தொகுக்க விரும்புகிறேன்.\" என்பதாக கருதலாம்."
+            ]
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "இப்போது நாம் ஒரு கிளை எப்படி இருக்கும் என்பதை பயிற்ச்சி செய்து பார்க்கலாம்.",
+              "",
+              "இங்கு `newImage` என்ற பதிய கிளை ஒன்றை உருவாக்குவோம்."
+            ],
+            "afterMarkdowns": [
+              "அவ்வலவு தான், `newImage` என்ற புதிய கிளை தயாராகி விட்டது மேலும் அது `C1` என்ற கிட்டை மூலமாக குறிக்கும்படி உள்ளது."
+            ],
+            "command": "git branch newImage",
+            "beforeCommand": ""
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "இப்போது அதில் சில மாற்றங்களை இணைப்போம். கீலே உள்ள பித்தேனை அமுக்கவும்."
+            ],
+            "afterMarkdowns": [
+              "அடடா! `newImage`க்கு மாறாக `main` கிளை முன்னேறி உள்ளது! ஏன் என்றால் நாம் \"அந்த\" புதிய கிளையில் இல்ல, அதனால்தான் நட்சத்திரக் குறி (*) `main` மேலுள்ளது."
+            ],
+            "command": "git commit",
+            "beforeCommand": "git branch newImage"
+          }
+        },
+        {
+          "type": "GitDemonstrationView",
+          "options": {
+            "beforeMarkdowns": [
+              "இப்போது நாம் கிட்டை கிளை தாவ சொல்லுவோம்.",
+              "",
+              "```",
+              "git checkout <name>",
+              "```",
+              "",
+              "புதிய மாற்றங்களை கமிட் செய்யும் முன்பு இது நம்மை புதிய கிளைக்கு மாற்றும்."
+            ],
+            "afterMarkdowns": [
+              "அவ்வலவுதான்! நமது மாற்றங்கள் புதிய கிளையின் பதிவு செய்ய பட்டுள்ளது."
+            ],
+            "command": "git checkout newImage; git commit",
+            "beforeCommand": "git branch newImage"
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "*குறிப்பு: கிட் 2.23 முதல், `git switch` என்ற புதிய கட்டளை `git checkout`க்கு மாற்றாக அறிமுகம் செய்ய பட்டுள்ளது, ",
+              "ஏன் என்றால் அது ஒரே கட்டளையில் அதிகப்படியான வேளைகளை செய்கிறது (சொல்லப்போனால் அது கொத்தாக பல தனிப்பட்ட செயல்களை செய்கின்றது). ",
+              "இன்னு பலர் `switch` பயன்படுத்த வழி இல்லாததால் இங்குள்ள பாடங்கள் இன்னும் `switch`க்கு பதில் `checkout` பயன்படுத்து கின்றது. ",
+              "இருப்பினும் இந்த செயலியில் நீங்கள் `switch`ஐ முயற்சிக்க விரும்பினால் செய்யலாம்! <a href=\"https://git-scm.com/docs/git-switch\" target=\"_blank\">மேலும் விவரங்களுக்கு</a>.* "
+            ]
+          }
+        },
+        {
+          "type": "ModalAlert",
+          "options": {
+            "markdowns": [
+              "சரி! நீங்கள் இப்போது கிட் கிளை உருவாக்க தயார். இந்த திரை மூடப்பட்டவுடன்,",
+              "`bugFix` எனும் கிளை உருவாக்கி அந்த கிளைக்கு மாறவும்.",
+              "",
+              "சொல்லபோனால், இதற்க்கு ஒரு குறுக்குவழி உள்ளது: ஒரு புதிய கிளையை உருவாக்கி ",
+              "உடனெ அதற்க்கு மாற, நீங்கள்",
+              "`git checkout -b [yourbranchname]` என கட்டளையிட்டால் போதும்."
             ]
           }
         }
